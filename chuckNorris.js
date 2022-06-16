@@ -12,7 +12,6 @@ async function getRandomJoke() {
       "https://api.chucknorris.io/jokes/random"
     );
     let randomJoke = await resolvedPromise.json();
-    console.log(randomJoke.value);
     renderRandomJokes(randomJoke.value);
   } catch (error) {
     console.log(error);
@@ -90,7 +89,6 @@ async function getJokeWithCategory(category) {
     );
     let listJokes = await resolvedPromise.json();
     let results = listJokes.value;
-    console.log(results);
     renderCategorizedJoke(results);
   } catch (error) {
     console.log(error);
