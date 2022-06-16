@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Norris Jokes</title>
+    <style>
+      .sect {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .search {
+        display: flex;
+        /* flex-direction: column; */
+      }
+      .joke-area{
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        width: 600px;
+        display: none;
+      }
+      .container{
+        padding: 5px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+      }
+
+    </style>
+    <script src="/chuckNorris.js" defer></script>
+  </head>
+  <body>
+    <section class="sect">
+      <form action="" class="search">
+        <div>
+          <label for="">Search Joke</label>
+          <input type="text" id="search-input"/>
+        </div>
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+      <div>
+        <button id="random-btn">RANDOM</button>
+      </div>
+      <div>
+        <select name="" id="select">
+          <option value="">Select</option>
+        </select>
+        <button id="category-btn">By Category</button>
+      </div>
+
+      <div class="joke-area" id="jokeArea"></div>
+    </section>
+  </body>
+</html>
